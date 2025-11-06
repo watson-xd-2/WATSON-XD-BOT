@@ -1,0 +1,58 @@
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let handler = async (m, { conn, command, text }) => {
+  const listRequest = await conn.groupRequestParticipantsList(m.chat);
+  if (!listRequest || listRequest.length === 0) {
+    return m.reply("No pending join requests!");
+  }
+
+  const action = command === "reject" ? "reject" : "approve";
+  const jids = listRequest.map((r) => r.jid);
+
+  const isAll = text && text.toLowerCase().includes("all");
+  const parsedNumber = text ? parseInt(text.replace(/[^\d]/g, ""), 10) : NaN;
+
+  let target = [];
+  if (isAll) {
+    target = jids;
+  } else if (!isNaN(parsedNumber) && parsedNumber > 0) {
+    const n = Math.min(parsedNumber, jids.length);
+    target = shuffle(jids).slice(0, n);
+  } else {
+    target = [jids[0]];
+  }
+
+  let ok = 0, fail = 0;
+  for (const jid of target) {
+    try {
+      await conn.groupRequestParticipantsUpdate(m.chat, [jid], action);
+      ok++;
+      await delay(1500); // Delay to prevent spamming the API
+    } catch {
+      fail++;
+    }
+  }
+
+  const verb = action === "approve" ? "approved" : "rejected";
+  return m.reply(`✅ ${ok} ${verb}${fail ? `, ❌ ${fail} failed` : ""}. Total requests: ${listRequest.length}`);
+};
+
+handler.help = ["acc", "reject"];
+handler.tags = ["group"];
+handler.command = /^(acc|reject)$/i;
+handler.group = true;     
+handler.admin = true;
+handler.botAdmin = true;
+
+export default handler;

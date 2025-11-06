@@ -1,8 +1,8 @@
 /*
-Author : Shirokami Ryzen 
-WA : +6285174269046
-Base : Elaina-MultiDevice
-Release : 22 Nov 2022
+Author : WATSON-XD
+WA : 263781330745
+Base : WATAON-XD-MultiDevice
+Release : OCTOBER 2025
 */
 
 import { watchFile, unwatchFile } from 'fs'

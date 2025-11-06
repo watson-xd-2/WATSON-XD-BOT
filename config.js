@@ -54,15 +54,15 @@ global.wibb = `${wktuwib}`
 
 /*============== SOCIAL ==============*/
 global.sig = 'https://www.instagram.com/watson-xd3'
-global.sgh = 'https://github.com/watson-xd7'
+global.sgh = 'https://github.com/watson-xd-2'
 global.sgc = 'https://whatsapp.com/channel/0029Vb5m3D9A2pL6kvlwSf2S'
-global.sgw = 'https://github.com/watson-xd7'
+global.sgw = 'https://github.com/watson-xd-2'
 global.sdc = '-'
 global.sfb = 'https://www.facebook.com/profile.php?id=100093026894360&mibextid=ZbWKwL'
 global.snh = 'https://www.instagram.com/watson-xd3'
 
 /*============= BOT FEATURES =============*/
-global.autotyping = true       // default off
+global.autotyping = false      // default off
 global.autorecording = false    // default off
 /*============= RESPON =============*/
 global.wait = 'Please Wait...'

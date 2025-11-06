@@ -1,16 +1,16 @@
 <p align="center">
     <img src="./thumbnail.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">InoriMD</h1>
+<h1 align="center">WATSON-XD-BOT</h1>
 
 </p>
 <p align="center">
-<a href="https://github.com/svazerID"><img title="Author" src="https://img.shields.io/badge/AUTHOR-svazerID-green.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/watson-xd-2"><img title="Author" src="https://img.shields.io/badge/AUTHOR-watson-xd-2-green.svg?style=for-the-badge&logo=github"></a>
 
 ##
-[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send/?phone=6283129667247&text=.menu)
-[![CHANNEL](https://img.shields.io/badge/Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029VbAhesDJ3jutFwGpwE3o)
-[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6283129667247)
+[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send/?phone=263781330745&text=.menu)
+[![CHANNEL](https://img.shields.io/badge/Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029Vb5m3D9A2pL6kvlwSf2S)
+[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://w263781330745)
  
 
 
@@ -47,8 +47,8 @@
 
 #### Setup bot on your Machine
 ```bash
-$ git clone https://github.com/svazerID/InoriMD
-$ cd InoriMD
+$ git clone https://github.com/watson-xd-2/WATSON-XD-BOT 
+$ cd WATSON-XD-BOT 
 $ npm i
 ```
 
@@ -74,13 +74,7 @@ npm start
 ### Thanks To
 [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
 [![WhiskeySockets](https://github.com/WhiskeySockets.png?size=100)](https://github.com/WhiskeySockets/Baileys)
-[![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
-[![ImYanXiao](https://github.com/ImYanXiao.png?size=100)](https://github.com/ImYanXiao)
-[![Xnuvers007](https://github.com/Xnuvers007.png?size=100)](https://github.com/Xnuvers007)
-[![ShirokamiRyzen](https://github.com/ShirokamiRyzen.png?size=100)](https://github.com/ShirokamiRyzen)
-[![AgusXzz](https://github.com/AgusXzz.png?size=100)](https://github.com/AgusXzz)
-[![MythEclipse](https://github.com/MythEclipse.png?size=100)](https://github.com/MythEclipse)
 #### Contributor
-[![svazerID](https://github.com/svazerID.png?size=100)](https://github.com/svazerID)
+[![WATSON-XD](https://github.com/watson-xd-2.png?size=100)](https://github.com/watson-xd-2)
 
 ---------
